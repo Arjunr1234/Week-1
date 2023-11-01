@@ -1,0 +1,344 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family:  'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  background: black;
+  color: white;
+  height: 3000px;
+}
+
+.header{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/header_bagrnd_image.jpg);
+  background-size: cover;
+  background-position: center;
+  position: 10px 8%;
+  position: relative;
+  border-bottom: 6px solid #333;
+
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.logo{
+  width: 200px;
+  margin-left: 163px;
+}
+nav button{
+  border: 0;
+  outline: 0;
+  background: #db0001;
+  color: #fff;
+  padding: 10px 25px;
+  font-size: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.english_button{
+  margin-left: 656px;
+  padding-bottom: 9px;
+  padding-top: 9px;
+  padding-right: 12x;
+  padding-left: 34px;
+  background: transparent;
+  color: white;
+  border: solid 1px white;
+  text-align: center;
+}
+
+.signin_button{
+  margin-right: 74px;
+}
+
+.signin_button:hover{
+  background-color: rgb(185, 28, 28);
+}
+.header_content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-top: 100px;
+}
+
+
+.header_content h1{
+  font-size: 3rem;
+  line-height: 70px;
+  font-weight: 600;
+  max-width: 650px;
+  white-space: nowrap;
+  margin-right: 263px;
+  
+  
+}
+
+.header_content h3{
+  font-weight: 400;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-family:  'Roboto', sans-serif;
+  margin-top: 9px;
+  margin-top: 9px;
+}
+
+.header_content p{
+  font-size: 1rem;
+  font-family:  'Roboto', sans-serif;
+  margin-bottom: 20px;
+}
+
+.input_button input{
+  padding: 13px;
+  margin-top: 10px;
+  padding-left: 163px;}
+
+.input_button button{
+  padding: 13px;
+  margin-top: 10px;
+  padding-left: 163px;
+  
+}
+
+
+.email_signup{
+  background: white;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  overflow: hidden;
+}
+ .input_button input{
+  flex: 1;
+  border: 0;
+  outline: 0;
+  margin-left: 20px;
+  border-radius: 4px;
+  padding-right: 55px;
+  background: transparent;
+  border: solid 2px grey;
+  color: white;
+  font-size: 20px;
+  
+}
+ .input_button button{
+  background: #db0001;
+  border: 0;
+  outline: 0;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 18px 30px;
+  border-radius: 4px;
+}
+
+.input_button button:hover{
+  background-color: rgb(164, 19, 19);
+}
+.feature{
+  padding: 50px 12%;
+  font-size: 22px;
+  border-bottom: 6px solid #333;
+}
+.row{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 0;
+  border-bottom: 6px solid #333;
+
+}
+.text_column{
+  flex-basis: 50%;
+  margin-bottom: 20px;
+  padding-left: 121px;
+  
+}
+.text_column p{
+  margin-right: 160px;
+  font-family:  'Roboto', sans-serif;
+}
+.img_col{
+  flex-basis: 50%;
+  margin-bottom: 20px;
+}
+.img_col img{
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+.features h2{
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/*----------------faq--------------------------------------------*/
+
+.faq{
+  padding: 10px 12%;
+  text-align: center;
+  font-size: 18px;
+}
+
+.faq h2{
+  font-weight: 500;
+  font-size: 40px;
+  margin-top: 22px;
+}
+.accordion{
+  margin: 60px auto;
+  width: 100%;
+  max-width: 750px;
+}
+.li{
+  list-style: none;
+  width: 100%;
+  padding:5px;
+
+}
+.label{
+  display: flex;
+  align-items: center;
+  padding: 20px ;
+  font-size: 18px;
+  font-weight: 500;
+  background: #303030;
+  margin-bottom: 2px;
+  cursor: pointer;
+  position: relative;
+}
+
+label::after{
+  content: '+';
+  font-size: 34px;
+  position: absolute;
+  right: 20px;
+  transition: transform 0.5s;
+}
+input[type="radio"]{
+  display: none;
+}
+.content{
+  background: #303030;
+  text-align: left;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0,5s;
+}
+.li input[type="radio"]:checked +label+.content{
+  max-height: 600px;
+  padding: 30px 20px;
+}
+.li input[type="radio"]:checked +label::after{
+  transform: rotate(135deg);
+}
+.faq .email_signup{
+  max-width: 600px;
+  margin: 20px auto 60px;
+  
+}
+.email_signup2{
+  margin-top: 30px;
+  margin-bottom: 38px;
+}
+
+
+
+.email_signup2 input{
+  
+  border: solid 1px grey;
+  padding: 18px;
+  width: 100px;
+  border-radius: 4px;
+  width: 338px;
+  font-size: 20px ;
+}
+.email_signup2 button{
+  background: red;
+  border: none;
+  padding: 23px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 143px;
+    color: white;
+
+}
+.email_signup2 button:hover{
+  background: rgb(233, 20, 20);
+}
+.greaterthan_icon{
+ background : white;
+}
+
+.last_section{
+  margin-top: 50px;
+}
+.small_text{
+  font-family:  'Roboto', sans-serif;
+  font-size: 20px;
+
+}
+.question_container{
+  margin-top: 50px;
+}
+
+
+/*---------------------footer--------------------------------------------------*/
+
+
+.footer{
+  padding:50px 15% 10px;
+  border-top: 6px solid #333;
+  color: #777;
+}
+.footer h2{
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
+
+}
+ 
+.footer .col{
+  flex-basis: 25%;
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+.footer .col a{
+  display: block;
+  text-decoration: none;
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer .row{
+  align-items: flex-start;
+  padding: 10px 0;
+  border-bottom: 0px;
+}
+.language_btn{
+  padding: 7px;
+    border: solid 2px grey;
+    border-radius: 5px;
+    width: 93px;
+    cursor: pointer;
+}
+.language_btn:hover{
+  background-color: rgb(208, 191, 191);
+}
